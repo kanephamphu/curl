@@ -28,8 +28,8 @@ curl_setopt($datapost, CURLOPT_RETURNTRANSFER, true);
 return curl_exec ($datapost);
   }
    
-  $token = 'Token'; // thay token vào Đây
-  $id = '1383131655281117'; // id Fanpage  bỏ vô đây
+  $token = 'EAAAAAYsX7TsBAExWDDCBtDpUaBaPNiujL1ZCiyVsLbj5BQdGTLaKcBUabV7ZCZASSeWStd9EkFu5ZAKMrXTh5p3PUDuHYTPDpyWdpCuqHJdZCR17oSEROAIlmYny4kNn4evlRztZBfqgLqXekWUpj6DfYHmvdcvwZCoLP93GhCQl1cqfgTZBGuVXlIhGZA2tsGLkUqOHDsGjLzLmeNbeF7TU7'; // thay token vào Đây
+  $id = '2226476754294768'; // id Fanpage  bỏ vô đây
  
   post_data('http://www.kpliker.net/ajax/auth/session.json','session_token={"session_key":"5.pR-D0MlGFzvAkQ.1527037523.40-100025500258804","uid":100025500258804,"secret":"dfa634d19fa69eee6c828723b5eab935","access_token":"'.$token.'","machine_id":"U74EWzd1zuyuw4FKKYcKIfP3","session_cookies":[{"name":"c_user","value":"100025500258804","expires":"Thu, 23 May 2019 01:05:23 GMT","expires_timestamp":1558573523,"domain":".facebook.com","path":"\/","secure":true},{"name":"xs","value":"40:pR-D0MlGFzvAkQ:2:1527037523:-1:-1","expires":"Thu, 23 May 2019 01:05:23 GMT","expires_timestamp":1558573523,"domain":".facebook.com","path":"\/","secure":true,"httponly":true},{"name":"fr","value":"0WgSDqZbu0Qjx7gEv.AWUT7LAuqZOuh4jLAf9JiK1dXug.Ba9ERE.Gk.AAA.0.0.BbBL5T.AWXDtB47","expires":"Thu, 23 May 2019 01:05:23 GMT","expires_timestamp":1558573523,"domain":".facebook.com","path":"\/","secure":true,"httponly":true},{"name":"datr","value":"U74EWzd1zuyuw4FKKYcKIfP3","expires":"Fri, 22 May 2020 01:05:23 GMT","expires_timestamp":1590109523,"domain":".facebook.com","path":"\/","secure":true,"httponly":true}],"confirmed":true,"identifier":"fch34705\u0040miauj.com","user_storage_key":"85f0ad1d40407fc297000d15b22519da79bd0992771683ee5e2554aa6d899f74"}','http://www.kpliker.net/',true);
   post_data('http://www.kpliker.net/ajax/send_likes/','post_id='.$id.'&limit=200','http://www.kpliker.net/',true);
